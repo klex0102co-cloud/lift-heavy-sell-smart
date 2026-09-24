@@ -4,6 +4,7 @@ import { ArrowLeft, Loader2 } from "lucide-react";
 import { formatPrice, productQueryOptions } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 import CartDrawer from "@/components/CartDrawer";
+import klexLogo from "@/assets/klex-logo.png.asset.json";
 
 export const Route = createFileRoute("/product/$handle")({
   head: () => ({
