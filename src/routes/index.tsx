@@ -5,6 +5,7 @@ import { productsQueryOptions } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 import CartDrawer from "@/components/CartDrawer";
 import ProductCard from "@/components/ProductCard";
+import klexLogo from "@/assets/klex-logo.png.asset.json";
 import heroImg from "@/assets/hero-straps.jpg";
 import reviewImg from "@/assets/review-lifter.jpg";
 
@@ -59,10 +60,14 @@ function Index() {
       {/* NAV */}
       <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-          <Link to="/" className="flex items-baseline gap-2">
-            <span className="font-display text-xl font-semibold tracking-[0.25em] text-bone">
-              KLEX
-            </span>
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src={klexLogo.url}
+              alt="KLEX"
+              className="h-6 w-auto md:h-7"
+              width={938}
+              height={301}
+            />
             <span className="hidden text-[10px] uppercase tracking-[0.2em] text-ash sm:block">
               COMPLEX MADE EASY
             </span>
@@ -293,9 +298,13 @@ function Index() {
 
       <footer className="border-t border-white/10 bg-ink">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-10 md:flex-row">
-          <span className="font-display text-lg font-semibold tracking-[0.25em] text-bone">
-            GRIPPOINT
-          </span>
+          <img
+            src={klexLogo.url}
+            alt="KLEX"
+            className="h-7 w-auto"
+            width={938}
+            height={301}
+          />
           <div className="flex gap-6 text-[12px] uppercase tracking-[0.12em] text-ash">
             <a href="#why" className="transition-colors hover:text-bone">
               Support
