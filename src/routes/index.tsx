@@ -5,19 +5,20 @@ import { productsQueryOptions } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 import CartDrawer from "@/components/CartDrawer";
 import ProductCard from "@/components/ProductCard";
+import klexLogo from "@/assets/klex-logo.png.asset.json";
 import heroImg from "@/assets/hero-straps.jpg";
 import reviewImg from "@/assets/review-lifter.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Grippoint — Lifting Straps & Strength Gear" },
+      { title: "KLEX — Lifting Straps & Strength Gear" },
       {
         name: "description",
         content:
           "Raw cotton lifting straps, wrist wraps, belts and chalk built for the rep your grip gives up on. Free 30-day returns, lifetime stitching.",
       },
-      { property: "og:title", content: "Grippoint — Lifting Straps & Strength Gear" },
+      { property: "og:title", content: "KLEX — Lifting Straps & Strength Gear" },
       {
         property: "og:description",
         content:
@@ -59,10 +60,14 @@ function Index() {
       {/* NAV */}
       <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-          <Link to="/" className="flex items-baseline gap-2">
-            <span className="font-display text-xl font-semibold tracking-[0.25em] text-bone">
-              KLEX
-            </span>
+          <Link to="/" className="flex items-center gap-3">
+            <img
+              src={klexLogo.url}
+              alt="KLEX"
+              className="h-6 w-auto md:h-7"
+              width={938}
+              height={301}
+            />
             <span className="hidden text-[10px] uppercase tracking-[0.2em] text-ash sm:block">
               COMPLEX MADE EASY
             </span>
@@ -72,7 +77,7 @@ function Index() {
               Gear
             </a>
             <a href="#why" className="transition-colors hover:text-bone">
-              Why Grippoint
+              Why KLEX
             </a>
           </nav>
           <CartDrawer />
@@ -204,7 +209,7 @@ function Index() {
       <section id="why" className="border-t border-white/10 bg-ink">
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-24">
           <p className="mb-3 text-[11px] uppercase tracking-[0.28em] text-brass">
-            Why Grippoint
+            Why KLEX
           </p>
           <h2 className="max-w-[20ch] font-display text-4xl font-semibold text-balance text-bone md:text-5xl">
             Built for the rep your grip gives up on.
@@ -243,7 +248,7 @@ function Index() {
           <div className="mt-16 grid items-center gap-8 rounded-2xl bg-ink2 p-8 ring-1 ring-white/5 md:p-10 lg:grid-cols-2">
             <div>
               <p className="text-[11px] uppercase tracking-[0.28em] text-brass">
-                The Grippoint Guarantee
+                The KLEX Guarantee
               </p>
               <h3 className="mt-4 font-display text-3xl font-medium leading-tight text-balance text-bone md:text-4xl">
                 Train it hard for 30 days. If it isn't the best gear you've
@@ -293,9 +298,13 @@ function Index() {
 
       <footer className="border-t border-white/10 bg-ink">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-10 md:flex-row">
-          <span className="font-display text-lg font-semibold tracking-[0.25em] text-bone">
-            GRIPPOINT
-          </span>
+          <img
+            src={klexLogo.url}
+            alt="KLEX"
+            className="h-7 w-auto"
+            width={938}
+            height={301}
+          />
           <div className="flex gap-6 text-[12px] uppercase tracking-[0.12em] text-ash">
             <a href="#why" className="transition-colors hover:text-bone">
               Support
@@ -308,7 +317,7 @@ function Index() {
             </a>
           </div>
           <span className="text-[12px] text-ash/70">
-            © 2026 Grippoint Supply Co.
+            © 2026 KLEX Supply Co.
           </span>
         </div>
       </footer>

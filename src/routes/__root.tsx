@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Grippoint — Strength Supply" },
+      { title: "KLEX — Lifting Straps & Strength Gear" },
       {
         name: "description",
         content:
-          "Lifting gear built for the rep your grip gives up on. Straps, wraps, belts and chalk from Grippoint Strength Supply.",
+          "Lifting gear built for the rep your grip gives up on. Straps, wraps, belts and chalk from KLEX.",
       },
-      { name: "author", content: "Grippoint Supply Co." },
-      { property: "og:title", content: "Grippoint — Strength Supply" },
+      { name: "author", content: "KLEX Supply Co." },
+      { property: "og:title", content: "KLEX — Lifting Straps & Strength Gear" },
       {
         property: "og:description",
         content:
@@ -96,14 +96,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@grippoint" },
+      { name: "twitter:site", content: "@klex" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",

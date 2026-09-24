@@ -4,21 +4,22 @@ import { ArrowLeft, Loader2 } from "lucide-react";
 import { formatPrice, productQueryOptions } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 import CartDrawer from "@/components/CartDrawer";
+import klexLogo from "@/assets/klex-logo.png.asset.json";
 
 export const Route = createFileRoute("/product/$handle")({
   head: () => ({
     meta: [
-      { title: "Shop Lifting Gear — Grippoint" },
+      { title: "Shop Lifting Gear — KLEX" },
       {
         name: "description",
         content:
-          "Product details for Grippoint lifting gear — straps, wraps, belts and chalk built in-house with free 30-day returns.",
+          "Product details for KLEX lifting gear — straps, wraps, belts and chalk built in-house with free 30-day returns.",
       },
-      { property: "og:title", content: "Shop Lifting Gear — Grippoint" },
+      { property: "og:title", content: "Shop Lifting Gear — KLEX" },
       {
         property: "og:description",
         content:
-          "Product details for Grippoint lifting gear — built in-house with free 30-day returns and lifetime stitching.",
+          "Product details for KLEX lifting gear — built in-house with free 30-day returns and lifetime stitching.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -55,10 +56,14 @@ function ProductPage() {
     <div className="min-h-screen bg-ink">
       <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-          <Link to="/" className="flex items-baseline gap-2">
-            <span className="font-display text-xl font-semibold tracking-[0.25em] text-bone">
-              GRIPPOINT
-            </span>
+          <Link to="/" className="flex items-center">
+            <img
+              src={klexLogo.url}
+              alt="KLEX"
+              className="h-6 w-auto md:h-7"
+              width={938}
+              height={301}
+            />
           </Link>
           <CartDrawer />
         </div>
