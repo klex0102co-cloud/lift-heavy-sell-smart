@@ -12,13 +12,13 @@ import reviewImg from "@/assets/review-lifter.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Grippoint — Lifting Straps & Strength Gear" },
+      { title: "KLEX — Lifting Straps & Strength Gear" },
       {
         name: "description",
         content:
           "Raw cotton lifting straps, wrist wraps, belts and chalk built for the rep your grip gives up on. Free 30-day returns, lifetime stitching.",
       },
-      { property: "og:title", content: "Grippoint — Lifting Straps & Strength Gear" },
+      { property: "og:title", content: "KLEX — Lifting Straps & Strength Gear" },
       {
         property: "og:description",
         content:
