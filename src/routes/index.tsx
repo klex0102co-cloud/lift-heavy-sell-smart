@@ -61,10 +61,10 @@ function Index() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           <Link to="/" className="flex items-baseline gap-2">
             <span className="font-display text-xl font-semibold tracking-[0.25em] text-bone">
-              GRIPPOINT
+              KLEX
             </span>
             <span className="hidden text-[10px] uppercase tracking-[0.2em] text-ash sm:block">
-              Strength Supply
+              COMPLEX MADE EASY
             </span>
           </Link>
           <nav className="hidden items-center gap-8 text-[13px] uppercase tracking-[0.12em] text-ash md:flex">
