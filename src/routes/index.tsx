@@ -209,7 +209,7 @@ function Index() {
       <section id="why" className="border-t border-white/10 bg-ink">
         <div className="mx-auto max-w-7xl px-6 py-20 md:py-24">
           <p className="mb-3 text-[11px] uppercase tracking-[0.28em] text-brass">
-            Why Grippoint
+            Why KLEX
           </p>
           <h2 className="max-w-[20ch] font-display text-4xl font-semibold text-balance text-bone md:text-5xl">
             Built for the rep your grip gives up on.
@@ -248,7 +248,7 @@ function Index() {
           <div className="mt-16 grid items-center gap-8 rounded-2xl bg-ink2 p-8 ring-1 ring-white/5 md:p-10 lg:grid-cols-2">
             <div>
               <p className="text-[11px] uppercase tracking-[0.28em] text-brass">
-                The Grippoint Guarantee
+                The KLEX Guarantee
               </p>
               <h3 className="mt-4 font-display text-3xl font-medium leading-tight text-balance text-bone md:text-4xl">
                 Train it hard for 30 days. If it isn't the best gear you've
