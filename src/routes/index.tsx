@@ -77,7 +77,7 @@ function Index() {
               Gear
             </a>
             <a href="#why" className="transition-colors hover:text-bone">
-              Why Grippoint
+              Why KLEX
             </a>
           </nav>
           <CartDrawer />
@@ -317,7 +317,7 @@ function Index() {
             </a>
           </div>
           <span className="text-[12px] text-ash/70">
-            © 2026 Grippoint Supply Co.
+            © 2026 KLEX Supply Co.
           </span>
         </div>
       </footer>
