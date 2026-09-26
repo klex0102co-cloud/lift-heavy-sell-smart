@@ -105,9 +105,7 @@ function Index() {
                 Grip That Holds The Bar
               </h1>
               <p className="mt-6 max-w-[46ch] text-base text-pretty text-ash md:text-lg">
-                Raw cotton webbing, a stitched steel plate, and a wrap that
-                locks past failure. Built for the last rep you'd otherwise bail
-                on.
+                D-ring cuffed lifting straps built to take the complex out of lifting,
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-5">
                 <button
@@ -158,7 +156,7 @@ function Index() {
                 />
                 <div className="absolute -bottom-5 -left-5 rounded-[10px] bg-bone px-5 py-4 shadow-lg ring-1 ring-black/5">
                   <p className="font-display text-2xl font-semibold leading-none text-ink">
-                    $34
+                    $19.99
                   </p>
                   <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-ink/60">
                     Cotton Lifting Straps
