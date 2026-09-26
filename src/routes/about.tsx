@@ -26,13 +26,13 @@ export const Route = createFileRoute("/about")({
 
 const founders = [
   {
-    name: "Founder One",
-    role: "Co-Founder",
+    name: "Allen Xue",
+    role: "FOUNDER",
     photo: founder1.url,
     photoWidth: 1440,
     photoHeight: 1080,
     bio: [
-      "Write the first founder's bio here — who they are, how they train, and why they started KLEX.",
+      'Meet Allen,\nAllen created KLEX to empower people from all ages to elevate gym performance with lifting straps that are reliable and durable. Allen said, "with one simple fact in mind, your grip gets tired before anything else, we found our one goal, taking the guess work out of productive lifting."',
     ],
   },
   {
