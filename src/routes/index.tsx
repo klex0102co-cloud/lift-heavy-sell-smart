@@ -76,6 +76,9 @@ function Index() {
             <a href="#gear" className="transition-colors hover:text-bone">
               Gear
             </a>
+            <a href="#about" className="transition-colors hover:text-bone">
+              About Us
+            </a>
             <a href="#why" className="transition-colors hover:text-bone">
               Why KLEX
             </a>
