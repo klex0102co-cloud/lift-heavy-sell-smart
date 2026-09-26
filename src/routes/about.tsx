@@ -27,7 +27,7 @@ export const Route = createFileRoute("/about")({
 const founders = [
   {
     name: "Allen Xue",
-    role: "FOUNDER",
+    role: "FOUNDER & CO-FOUNDER",
     photo: founder1.url,
     photoWidth: 1440,
     photoHeight: 1080,
@@ -36,8 +36,8 @@ const founders = [
     ],
   },
   {
-    name: "Founder Two",
-    role: "Co-Founder",
+    name: "Kristian Zahariev",
+    role: "FOUNDER & CO-FOUNDER",
     photo: null as string | null,
     photoWidth: 0,
     photoHeight: 0,
@@ -92,7 +92,7 @@ function About() {
             KLEX started with a simple frustration: straps that looked the
             part but gave out mid-set. So we built our own — heavy D-ring
             straps cut, stitched and packed in-house, priced without the
-            gimmicks.
+            gimmicks. Simple, effective, and easy.
           </p>
         </div>
       </section>
