@@ -218,8 +218,7 @@ function Index() {
                 Grip that holds
               </h3>
               <p className="mt-2 text-[15px] text-pretty text-ash">
-                A wrap that tightens with every pull. No slippage past rep ten,
-                no re-wrapping mid-set.
+                A wrap that tightens with every pull. No slippage past rep ten, no re-wrapping mid-set with our silicon technology.
               </p>
             </div>
             <div className="border-l-2 border-brass pl-5">
@@ -227,8 +226,7 @@ function Index() {
                 Material, not marketing
               </h3>
               <p className="mt-2 text-[15px] text-pretty text-ash">
-                10.5mm cotton webbing and a machined steel plate. The good
-                stuff, measured in millimeters.
+                Heavy Duty D Ring Lifting Straps for Weightlifting, Gym Training, Thick Padded Grip Supported Gym Straps.
               </p>
             </div>
             <div className="border-l-2 border-tape pl-5">
@@ -276,7 +274,7 @@ function Index() {
       <section className="bg-oxblood">
         <div className="mx-auto max-w-7xl px-6 py-20 text-center md:py-24">
           <p className="mb-4 text-[11px] uppercase tracking-[0.28em] text-bone/70">
-            Chalk up
+            KLEX MADE TO FLEX
           </p>
           <h2 className="mx-auto max-w-[16ch] font-display text-5xl font-bold text-balance text-bone md:text-6xl">
             Ready When The Bar Is
