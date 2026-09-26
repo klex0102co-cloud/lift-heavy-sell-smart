@@ -5,11 +5,12 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — Grippoint "Gradient grit on charcoal".
+ * Design system — KLEX "red on black".
  *
- * Palette (converted to oklch):
- *   ink #171411, ink2 #221c16, bone #e7e0d2, ash #8c857a,
- *   oxblood #a5352b, brass #c99a4a, tape #f0d24a
+ * Palette tuned to the KLEX wordmark: vivid red on near-black,
+ * neutral charcoal surfaces, cool bone text.
+ *   ink #0d0d0e, ink2 #161618, bone #ececea, ash #8f8f92,
+ *   klex red #e5322d, deep red #a5231f, soft white #f5f5f4
  */
 
 @theme inline {
@@ -57,14 +58,14 @@
 :root {
   --radius: 0.625rem;
 
-  /* Raw palette */
-  --ink: oklch(0.194 0.008 67.3);
-  --ink2: oklch(0.231 0.015 67.0);
-  --bone: oklch(0.908 0.020 84.6);
-  --ash: oklch(0.620 0.018 79.3);
-  --oxblood: oklch(0.492 0.149 28.7);
-  --brass: oklch(0.715 0.112 78.6);
-  --tape: oklch(0.865 0.153 96.5);
+  /* Raw palette (tuned to the KLEX logo red) */
+  --ink: oklch(0.165 0.004 285);
+  --ink2: oklch(0.215 0.006 285);
+  --bone: oklch(0.922 0.004 285);
+  --ash: oklch(0.630 0.008 285);
+  --oxblood: oklch(0.585 0.215 27.5);
+  --brass: oklch(0.585 0.215 27.5);
+  --tape: oklch(0.922 0.004 285);
 
   /* Semantic tokens (dark charcoal by default) */
   --background: var(--ink);

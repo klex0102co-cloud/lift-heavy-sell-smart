@@ -96,7 +96,7 @@ function Index() {
                 className="max-w-[18ch] font-display text-[64px] font-bold leading-[0.92] text-balance md:text-[88px]"
                 style={{
                   background:
-                    "linear-gradient(160deg,#f0d24a 0%,#c99a4a 42%,#e7e0d2 100%)",
+                    "linear-gradient(160deg,#ff4a44 0%,#e5322d 42%,#ececea 100%)",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   color: "transparent",
