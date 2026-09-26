@@ -76,9 +76,12 @@ function Index() {
             <a href="#gear" className="transition-colors hover:text-bone">
               Gear
             </a>
-            <a href="#about" className="transition-colors hover:text-bone">
+            <Link
+              to="/about"
+              className="transition-colors hover:text-bone"
+            >
               About Us
-            </a>
+            </Link>
             <a href="#why" className="transition-colors hover:text-bone">
               Why KLEX
             </a>
@@ -203,49 +206,6 @@ function Index() {
               ))}
             </div>
           )}
-        </div>
-      </section>
-
-      {/* ABOUT US */}
-      <section id="about" className="bg-ink">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:py-24">
-          <div className="grid items-center gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-5">
-              <p className="mb-3 text-[11px] uppercase tracking-[0.28em] text-brass">
-                About Us
-              </p>
-              <h2 className="font-display text-4xl font-semibold text-balance text-bone md:text-5xl">
-                Complex Made Easy
-              </h2>
-            </div>
-            <div className="lg:col-span-7">
-              <p className="max-w-[60ch] text-lg text-pretty text-ash">
-                KLEX started with a simple frustration: straps that looked the
-                part but gave out mid-set. So we built our own — heavy D-ring
-                straps cut, stitched and packed in-house, priced without the
-                gimmicks.
-              </p>
-              <p className="mt-5 max-w-[60ch] text-[15px] text-pretty text-ash">
-                No sponsorships, no filler SKUs, no marketing fluff. Just
-                lifting gear made to take the complex out of your training,
-                backed by free 30-day returns and lifetime re-stitching.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-6 text-[12px] uppercase tracking-[0.1em] text-ash">
-                <span className="flex items-center gap-2">
-                  <span className="size-1.5 rounded-full bg-oxblood" />
-                  Built in-house
-                </span>
-                <span className="flex items-center gap-2">
-                  <span className="size-1.5 rounded-full bg-oxblood" />
-                  Priced honestly
-                </span>
-                <span className="flex items-center gap-2">
-                  <span className="size-1.5 rounded-full bg-oxblood" />
-                  Tested under the bar
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
