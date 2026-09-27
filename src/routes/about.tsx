@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import klexLogo from "@/assets/klex-logo.png.asset.json";
 import founder1 from "@/assets/founder-1.jpg.asset.json";
+import founder2 from "@/assets/founder-2.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -38,9 +39,9 @@ const founders = [
   {
     name: "Kristian Zahariev",
     role: "FOUNDER & CO-FOUNDER",
-    photo: null as string | null,
-    photoWidth: 0,
-    photoHeight: 0,
+    photo: founder2.url,
+    photoWidth: 1274,
+    photoHeight: 1559,
     bio: [
       "Write the second founder's bio here — who they are, how they train, and why they started KLEX.",
     ],
