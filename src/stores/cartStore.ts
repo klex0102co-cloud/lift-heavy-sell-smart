@@ -112,6 +112,7 @@ export const useCartStore = create<CartStore>()(
           console.error("Failed to add item:", error);
         } finally {
           set({ isLoading: false });
+          if (get().items.length > 0) set({ isDrawerOpen: true });
         }
       },
 
