@@ -31,16 +31,17 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const HERO_PRODUCT_HANDLE = "cotton-lifting-straps";
+const HERO_PRODUCT_HANDLE = "klex-d-ring-lifting-straps";
 
 function Index() {
   const { data: products, isLoading } = useQuery(productsQueryOptions());
   const addItem = useCartStore((state) => state.addItem);
   const cartLoading = useCartStore((state) => state.isLoading);
 
-  const heroProduct = products?.find(
-    (p) => p.handle === HERO_PRODUCT_HANDLE,
-  );
+  const heroProduct =
+    products?.find((p) => p.handle === HERO_PRODUCT_HANDLE) ??
+    products?.find((p) => p.handle.includes("strap")) ??
+    products?.[0];
   const heroVariant = heroProduct?.variants.edges[0]?.node;
 
   const handleHeroAdd = async () => {
