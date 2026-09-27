@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   ArrowRight,
   Loader2,
@@ -14,11 +14,12 @@ import { formatPrice } from "@/lib/shopify";
 
 export default function CartDrawer() {
   useCartSync();
-  const [isOpen, setIsOpen] = useState(false);
   const {
     items,
     isLoading,
     isSyncing,
+    isDrawerOpen: isOpen,
+    setDrawerOpen: setIsOpen,
     updateQuantity,
     removeItem,
     getCheckoutUrl,
