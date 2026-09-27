@@ -126,8 +126,8 @@ function Index() {
                   Add to Cart
                   <span className="text-bone/70">
                     {heroVariant
-                      ? `$${parseFloat(heroVariant.price.amount).toFixed(0)}`
-                      : "$34"}
+                      ? `$${parseFloat(heroVariant.price.amount).toFixed(2)}`
+                      : ""}
                   </span>
                 </button>
                 <a
