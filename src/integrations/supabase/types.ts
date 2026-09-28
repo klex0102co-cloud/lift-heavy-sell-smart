@@ -14,6 +14,97 @@ export type Database = {
   }
   public: {
     Tables: {
+      ab_assignments: {
+        Row: {
+          created_at: string
+          id: string
+          variant_id: string
+          visitor_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          variant_id: string
+          visitor_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          variant_id?: string
+          visitor_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ab_assignments_variant_id_fkey"
+            columns: ["variant_id"]
+            isOneToOne: false
+            referencedRelation: "ab_variants"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      ab_events: {
+        Row: {
+          created_at: string
+          event_type: string
+          id: string
+          variant_id: string | null
+          visitor_id: string
+        }
+        Insert: {
+          created_at?: string
+          event_type: string
+          id?: string
+          variant_id?: string | null
+          visitor_id: string
+        }
+        Update: {
+          created_at?: string
+          event_type?: string
+          id?: string
+          variant_id?: string | null
+          visitor_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ab_events_variant_id_fkey"
+            columns: ["variant_id"]
+            isOneToOne: false
+            referencedRelation: "ab_variants"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      ab_variants: {
+        Row: {
+          active: boolean
+          config: Json
+          created_at: string
+          id: string
+          key: string
+          name: string
+          weight: number
+        }
+        Insert: {
+          active?: boolean
+          config?: Json
+          created_at?: string
+          id?: string
+          key: string
+          name: string
+          weight?: number
+        }
+        Update: {
+          active?: boolean
+          config?: Json
+          created_at?: string
+          id?: string
+          key?: string
+          name?: string
+          weight?: number
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
