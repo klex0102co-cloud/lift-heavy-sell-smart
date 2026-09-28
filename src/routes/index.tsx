@@ -4,6 +4,7 @@ import { Loader2 } from "lucide-react";
 import { productsQueryOptions } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 import CartDrawer from "@/components/CartDrawer";
+import AuthMenu from "@/components/AuthMenu";
 import ProductCard from "@/components/ProductCard";
 import klexLogo from "@/assets/klex-logo.png.asset.json";
 import heroImg from "@/assets/hero-straps.jpg";
@@ -87,7 +88,10 @@ function Index() {
               Why KLEX
             </a>
           </nav>
-          <CartDrawer />
+          <div className="flex items-center gap-3">
+            <AuthMenu />
+            <CartDrawer />
+          </div>
         </div>
       </header>
 

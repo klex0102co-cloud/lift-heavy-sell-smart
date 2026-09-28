@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import AuthMenu from "@/components/AuthMenu";
 import klexLogo from "@/assets/klex-logo.png.asset.json";
 import founder1 from "@/assets/founder-1.jpg.asset.json";
 import founder2 from "@/assets/founder-2.jpg.asset.json";
@@ -77,6 +78,7 @@ function About() {
               About Us
             </Link>
           </nav>
+          <AuthMenu />
         </div>
       </header>
 

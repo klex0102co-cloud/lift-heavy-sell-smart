@@ -4,6 +4,7 @@ import { ArrowLeft, Loader2 } from "lucide-react";
 import { formatPrice, productQueryOptions } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 import CartDrawer from "@/components/CartDrawer";
+import AuthMenu from "@/components/AuthMenu";
 import klexLogo from "@/assets/klex-logo.png.asset.json";
 
 export const Route = createFileRoute("/product/$handle")({
@@ -65,7 +66,10 @@ function ProductPage() {
               height={301}
             />
           </Link>
-          <CartDrawer />
+          <div className="flex items-center gap-3">
+            <AuthMenu />
+            <CartDrawer />
+          </div>
         </div>
       </header>
 
